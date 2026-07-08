@@ -1,0 +1,13 @@
+.hero {
+    height: 350px;
+    width: auto;
+    border: 2px solid black;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link.active a{
+    color: aliceblue;
+}
