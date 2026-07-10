@@ -1,13 +1,112 @@
+:root {
+  --bg-primary: #0A0A0B;
+  --bg-secondary: #141416;
+  --bg-tertiary: #1E1E21;
+  --text-primary: #F5F5F4;
+  --text-secondary: #A1A1A6;
+  --text-tertiary: #6E6E73;
+  --border-subtle: #2A2A2D;
+  --accent: #22D3EE;
+  --accent-dim: #0E7490;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+  --space-6: 96px;
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navbar {
+    background-color: transparent !important;
+    padding: 25px 0px 25px 0px;
+    border-bottom: 1px solid transparent;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-link.active {
+    color: var(--text-primary) !important;
+}
+
+.nav-link,
+.nav-link a {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-secondary);
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link a:hover,
+.nav-link a:active {
+    color: var(--text-primary);
+    border-bottom-color: var(--accent);
+}
+
 .hero {
-    height: 350px;
-    width: auto;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 100px 25px 0 25px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.nav-link {
-    color: white !important;
+.hero_text{
+    font-size: clamp(56px, 10vw, 140px );
+    font-style: italic;
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
 }
 
-.nav-link.active a{
-    color: aliceblue;
+.eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-tertiary);
+}
+
+.hero_description { 
+    max-width: 600px;
+    color: var(--text-secondary);
+    font-size: 16px;
+    font-family: var(--font-body);
+}
+
+.separator {
+    width: 50%;
+    border: 1px solid var(--border-subtle);
+    margin: 60px 0px 0px 0px;
+
+
+}
+
+.hero_sub_text {
+    display: flex;
+    gap: 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-tertiary);
+    padding: 60px 0px 0px 0px;
 }
