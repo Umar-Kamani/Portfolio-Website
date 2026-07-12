@@ -9,21 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/608b2ac16e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <nav class="navbar sticky-top navbar-expand-lg">
+<body data-bs-spy="scroll" data-bs-target="#nav" id="home">
+    <nav class="navbar sticky-top navbar-expand-lg" id="nav">
         <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav gap-5 ">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Work</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" href="#work_section">Work</a>
+                    <a class="nav-link" href="#about_section">About</a>
+                    <a class="nav-link" href="#contact_section">Contact</a>
                 </div>
             </div>
         </div>
@@ -48,21 +50,24 @@
         </div> 
             <hr class="separator">
         <div class="hero_sub_text">
-            <span>Est. 2004</span>
+            <span>Est. 2025</span>
             <span>SCROLL TO VIEW WORK ↓</span>
         </div>
+        <div id="work_section"></div>
     </header>
+
+    
 
     <div class=" work_section container">
         <div class="selected_work_title container">
             <p class="mono">Portfolio</p>
-            <p class="frames_title">Recent Frames</p>
+            <p class="frames_title">A Few Recent Frames</p>
         </div>
-        <button type="button" class="btn btn-outline-primary">View Portfolio</button>
+        <a href="https://www.flickr.com/photos/umarkamani" class="btn btn-outline-primary" target="_blank">View Portfolio</a>
     </div>
 
     <div class="img_gallery_homepage container">
-        <div class="row row-cols-3 justify-content-center g-3">
+        <div class="row row-cols-3 justify-content-around g-3">
             <div class="col-md-auto"> 
                 <a data-flickr-embed="true" href="https://www.flickr.com/photos/umarkamani/55232099353/in/dateposted-public/" title="Port Louis - 1"><img src="https://live.staticflickr.com/65535/55232099353_95a93802ea.jpg" width="333" height="500" alt="Port Louis - 1"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
             </div>
@@ -83,6 +88,26 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer container-fluid">
+        <div class="footer_info_section container">
+            <p class="footer_title">Umar Kamani</p>
+            <p class="mono">© 2026 - All rights reserved</p>
+        </div>
+
+        <div class="social_icons_container">
+            <a href="github profile">
+                <i class="fa-brands fa-github">Github</i>
+            </a>
+            <a href="github profile">
+                <i class="fa-brands fa-linkedin">Linkedin</i>
+            </a>
+            <a href="github profile">
+                <i class="fa-brands fa-flickr">Flickr</i>            
+            </a>
+        </div> 
+
+    </footer>
 
 </div>
 
