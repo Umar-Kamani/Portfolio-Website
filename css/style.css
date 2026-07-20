@@ -112,7 +112,7 @@ body {
 }
 
 .hero_text{
-    font-size: clamp(56px, 10vw, 140px );
+    font-size: clamp(60px, 10vw, 140px );
     font-style: italic;
     font-family: var(--font-display);
     font-weight: 500;
@@ -136,24 +136,6 @@ body {
     font-family: var(--font-body);
 }
 
-.separator {
-    width: 50%;
-    border: 1px solid var(--border-subtle);
-    margin: 60px 0px 0px 0px;
-
-
-}
-
-.hero_sub_text {
-    display: flex;
-    gap: 25px;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--text-tertiary);
-    padding: 60px 0px 0px 0px;
-}
-
 .social_icons_container a {
     color: hsla(208, 100%, 97%, 0.362);
     text-decoration: none;
@@ -168,9 +150,26 @@ body {
     font-size: 1.25rem;
 }
 
+.separator {
+    width: 50%;
+    border: 1px solid var(--border-subtle);
+    margin: 60px 0px 0px 0px;
+}
+
+.hero_sub_text {
+    display: flex;
+    gap: 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-tertiary);
+    padding: 60px 0px 0px 0px;
+}
+
+
 .work_section{
     display: flex;
-    padding: 50px 25px 0 25px;
+    padding: 120px 25px 0 25px;
 }
 
 .frames_title, .footer_title {
@@ -206,14 +205,44 @@ body {
     object-fit: cover;
 }
 
+.bio_section {
+    padding: 0px 25px 120px 25px;
+    display: flex
+}
 
-/* .test {
-    border: 2px solid violet;
-} */
+#about_portrait {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.about_text {
+    font-size: 60px;
+    font-style: italic;
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+
+}
+
+.bio_data {
+    display: flex;
+    padding: 0;
+}
+
+.academic_qual, .skills, .hobbies {
+    border: solid 2px var(--border-subtle);
+    border-radius: 5px;
+    padding: 10px;
+}
 
 
-
-
+.separator_2 {
+    width: 50%;
+    border: 1px solid var(--border-subtle);
+    margin: 10px 0px 0px 0px;
+}
 
 
 
